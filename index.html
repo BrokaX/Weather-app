@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="bg">
+    <header id="header">
+      <nav class="nav">
+        <p id="date"></p>
+        <form action="">
+          <input id="search" type="text" placeholder="City name" />
+          <button id="find" type="submit"><img src="./assets/search.png" alt=""></button>
+        </form>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+          <a>Athens</a>
+          <a>New York</a>
+          <a>London</a>
+          <a>Abu Dhabi</a>
+          <a>Dubai</a>
+          <a>Berlin</a>
+          <a>Moscow</a>
+          <a>Minsk</a>
+          <a>Astana</a>
+        </div>
+        <div id="main">
+          <p class="openbtn" onclick="openNav()">☰ Select a city</p>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="top">
+        <h1>Weather App</h1>
+        <!-- <form action="">
+          <label for="text">What's the weather in</label>
+          <input id="search" type="text" placeholder="City name" />
+          <button id="find" type="submit">🔍</button>
+        </form> -->
+      </div>
+
+      <div class="main">
+        <h2 id="city"></h2>
+        <h2 id="degree"></h2>
+        <span id="celsius">℃</span> <span>|</span><span id="fahrenheit">℉</span>
+        <img id="icon" src="#" alt="" />
+        <span id="weather"></span>
+      </div>
+    </div>
+  </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
