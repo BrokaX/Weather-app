@@ -1,0 +1,64 @@
+.main-weather-section-left {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  background: url('../../assets/blurred.jpg');
+  background-position: center;
+  background-size: auto;
+  margin-block: 1rem;
+  z-index: -1;
+  
+}
+
+.top{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.6);
+  
+}
+.form-container{
+  position: relative;
+  width: 100%;
+}
+#search{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.993);
+  background-color: rgba(214, 213, 213, 0.233);
+  outline: none;
+  width: 80%;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 2%;
+}
+#search::placeholder {
+  color: rgb(194, 193, 193);
+  text-align: center;
+
+}
+
+#find  {
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  top: .75rem;
+  right: 4.5rem;
+}
+#find img {
+  width: 18px;
+}
+
+
+#fahrenheit,
+#celsius {
+  cursor: pointer;
+}

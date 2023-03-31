@@ -1,0 +1,95 @@
+.Navbar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 6%;
+  border-radius: 1rem;
+  background: url('../assets/blurred.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1rem;
+}
+.nav {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(5px);
+}
+.menu-icon {
+  width: 1.5rem;
+  margin-bottom: 1rem;
+}
+.sidebar-open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+  width: 15vw;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+   -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(5px);
+  transition: 0.5s;
+  border-radius: 1rem;
+  padding-top: 2rem;
+}
+.sidebar-closed {
+  display: none;
+  height: 0;
+  width: 0;
+}
+.sidebar-open li {
+  cursor: pointer;
+  padding: 0.6rem;
+  display: none;
+  font-size: 1em;
+  color: #d3d3d3;
+  display: block;
+  transition: 0.3s;
+  text-decoration: none;
+  list-style: none;
+}
+
+.sidebar-open li:hover {
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 16px;
+}
+
+.menu-icon:hover,
+.app-logo:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.main-menu {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+
+.app-logo img {
+  cursor: pointer;
+  display: flex;
+  width: 2rem;
+  margin-bottom: 2rem;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  scale: 1.5;
+}
