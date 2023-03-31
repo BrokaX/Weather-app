@@ -8,13 +8,7 @@ export default function SideBar() {
     <div className='app-wrapper'>
       <section className='app-container'>
        <NavBar/>
-        <div className='main-weather-section-left bg'>
-         <DataBox/>
-        </div>
-
-        <div className='main-weather-section-right'>
-          <div className='top'></div>
-        </div>
+<DataBox/>
       </section>
     </div>
   );
